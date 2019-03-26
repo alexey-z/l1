@@ -16,7 +16,7 @@
 
     "files":
         [
-        {"includePattern": "${TRAVIS_BUILD_DIR}/build/(.*\.deb)", "uploadPattern": "debs/$1"}
+        {"includePattern": "build/(.*\.deb)", "uploadPattern": "/$1"}
         ],
     "publish": true
 }
