@@ -16,7 +16,7 @@
 
     "files":
         [
-        {"includePattern": "build/(.*\.deb)"}
+        {"includePattern": "./build/(.*\.deb)", "uploadPattern": "debs/$1"}
         ],
     "publish": true
 }
