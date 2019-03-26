@@ -6,4 +6,4 @@ configure_file (
 	"${PROJECT_SOURCE_DIR}/HelloConfig.h.in"
 	"${PROJECT_BINARY_DIR}/HelloConfig.h"
 )
-add_executable(Hello main.cxx)
+add_executable(helloworld main.cxx)
