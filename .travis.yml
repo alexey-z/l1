@@ -6,3 +6,4 @@ deploy:
         provider: bintray
         user: ${BINTRAY_USER}
         key: ${BINTRAY_API_KEY}
+        skip_cleanup: true
