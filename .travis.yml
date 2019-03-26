@@ -10,5 +10,3 @@ deploy:
         user: ${BINTRAY_USER}
         key: ${BINTRAY_API_KEY}
         skip_cleanup: true
-install:
-        - mv ./build/helloworld /usr/local/bin/helloworld
