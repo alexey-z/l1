@@ -2,3 +2,5 @@ language: cpp
 script:
         - cmake ./
         - make
+deploy:
+        provider: bintray
