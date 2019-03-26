@@ -1,11 +1,14 @@
 language: cpp
 script:
-        - cmake ./
+        - mkdir -p ./build/
+        - cd ./build
+        - cmake ../
         - make
+        - cpack 
 deploy:
         provider: bintray
         user: ${BINTRAY_USER}
         key: ${BINTRAY_API_KEY}
         skip_cleanup: true
-instrall:
-        - mv ./helloworld /usr/local/bin/helloworld
+install:
+        - mv ./build/helloworld /usr/local/bin/helloworld
