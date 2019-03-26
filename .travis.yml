@@ -6,6 +6,7 @@ script:
         - make
         - cpack 
 deploy:
+        file: "./descriptor.json"
         provider: bintray
         user: ${BINTRAY_USER}
         key: ${BINTRAY_API_KEY}
