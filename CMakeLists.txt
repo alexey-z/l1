@@ -7,6 +7,8 @@ configure_file (
 	"${PROJECT_BINARY_DIR}/HelloConfig.h"
 )
 
+include_directories("${PROJECT_BINARY_DIR}")
+
 SET(CPACK_GENERATOR "DEB")
 SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Aleksei Zakharov")
 SET(CPACK_PACKAGE_VERSION_MAJOR "1")
