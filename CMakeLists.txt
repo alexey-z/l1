@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.0)
-project (helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project (helloworld VERSION 1.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file (
 	"${PROJECT_SOURCE_DIR}/HelloConfig.h.in"
