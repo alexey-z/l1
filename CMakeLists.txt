@@ -15,6 +15,6 @@ SET(CPACK_PACKAGE_VERSION_MAJOR "1")
 SET(CPACK_PACKAGE_VERSION_MINOR "0")
 SET(CPACK_PACKAGE_VERSION_PATCH ${Hello_VERSION_BUILD})
 
-add_executable(helloworld main.cxx)
+add_executable(helloworld main.cpp)
 INSTALL(TARGETS helloworld DESTINATION /usr/local/bin/)
 INCLUDE(CPack)
