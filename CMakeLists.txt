@@ -3,10 +3,8 @@ project (helloworld VERSION 1.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file (
 	"${PROJECT_SOURCE_DIR}/HelloConfig.h.in"
-	"${PROJECT_BINARY_DIR}/HelloConfig.h"
+	"${PROJECT_SOURCE_DIR}/HelloConfig.h"
 )
-
-include_directories("${PROJECT_BINARY_DIR}")
 
 SET(CPACK_GENERATOR "DEB")
 SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Aleksei Zakharov")
